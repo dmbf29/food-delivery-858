@@ -8,6 +8,10 @@ class Meal
     @price = attributes[:price] # integer
   end
 
+  def build_row
+    [@id, @name, @price]
+  end
+
   def self.headers
     ['id', 'name', 'price']
   end
